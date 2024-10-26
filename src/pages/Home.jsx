@@ -1,6 +1,13 @@
 import React from "react";
 import "../App.css";
 import img1 from "../assets/logo.png";
+import { useNavigate } from "react-router-dom";
+
+const navigate = useNavigate();
+
+function handleCart() {
+  navigate("/cart");
+}
 
 function Home() {
   return (
@@ -17,6 +24,9 @@ function Home() {
           <li className="nav-item">Resources</li>
         </ul>
         <button className="nav-btn">Start Free Trial</button>
+        <button onClick={handleCart} className="nav-btn">
+          Cart
+        </button>
       </nav>
 
       <div className="container-2">
