@@ -148,9 +148,12 @@
 }
 
 .nav-item:hover,
-.nav-btn:hover,
 .card p:hover {
   color: #0056b3;
+}
+.nav-btn:hover {
+  color: #0056b3;
+  background-color: wheat;
 }
 
 @media (max-width: 768px) {
